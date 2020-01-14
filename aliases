@@ -46,6 +46,9 @@ alias grmignored='git ls-files --ignored --exclude-standard -z | xargs -0 git rm
 
 alias dotfiles="cd ~/.dotfiles"
 alias gitdir="cd ~/Documents/Git"
+alias prd="~/Projects/Productive"
+alias libs="~/Libs"
+alias mc="~/Library/Application\ Support/minecraft"
 
 # Common
 
@@ -54,3 +57,5 @@ alias t='tig'
 alias reload="source ~/.zshrc"
 alias cat='ccat'
 alias aliases="cat ~/.dotfiles/aliases"
+alias vc="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+

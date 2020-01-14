@@ -1,49 +1,31 @@
 export ZSH="/Users/$(whoami)/.oh-my-zsh"
-export XCODE_INSTALL_USER="dmitri.baginski@gmail.com"
+export XCODE_INSTALL_USER="dmitryduleba@gmail.com"
 
 ZSH_AUTOSUGGEST_CLEAR_WIDGETS+=(bracketed-paste accept-line)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=15'
 DEFAULT_USER=$(whoami)
 unsetopt BEEP
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
-
-POWERLEVEL9K_MODE="nerdfont-complete"
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_to_last"
-POWERLEVEL9K_HIDE_BRANCH_ICON=true
-
-# DIR
-POWERLEVEL9K_DIR_ETC_BACKGROUND=none
-POWERLEVEL9K_DIR_ETC_FOREGROUND=red
-POWERLEVEL9K_DIR_HOME_BACKGROUND=none
-POWERLEVEL9K_DIR_HOME_FOREGROUND=magenta
-POWERLEVEL9K_DIR_DEFAULT_BACKGROUND=none
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND=red
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND=none
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND=cyan
-
-# VCS
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND=none
-POWERLEVEL9K_VCS_CLEAN_FOREGROUND=green
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND=none
-POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND=red
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND=none
-POWERLEVEL9K_VCS_MODIFIED_FOREGROUND=yellow
-
-# SEPARATOR
-POWERLEVEL9K_LEFT_SEGMENT_SEPARATOR=" %F{245}:"
-POWERLEVEL9K_LEFT_SUBSEGMENT_SEPARATOR=' '
-POWERLEVEL9K_WHITESPACE_BETWEEN_LEFT_SEGMENTS=''
-
-plugins=( xcode sublime osx bundler iterm2 )
+ZSH_THEME="agnoster"
 
 source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+plugins=( 
+	xcode 
+	sublime 
+	osx 
+	bundler 
+	iterm2 
+	zsh-completions
+	zsh-autosuggestions
+	zsh-syntax-highlighting
+)
 
 source $HOME/.dotfiles/aliases
 source $HOME/.dotfiles/functions
-
-POWERLEVEL9K_HOME_SUB_ICON="$(print_icon "HOME_SUB_ICON") "
+source $HOME/.iterm2_shell_integration.zsh
+source $HOME/.fastlane/completions/completion.sh
 
 eval "$(rbenv init -)"

@@ -5,17 +5,17 @@ brew doctor
 (cd ~/.dotfiles; brew bundle)
 
 # duti
-echo "com.sublimetext.3   public.plain-text all" | duti
-echo "com.sublimetext.3   public.unix-executable all" | duti
-duti -s com.sublimetext.3 .mod all
-duti -s com.sublimetext.3 .dat all
-duti -s com.sublimetext.3 .run all
-duti -s com.sublimetext.3 .tex all
-duti -s com.sublimetext.3 .json all
-duti -s com.sublimetext.3 .php all
-duti -s com.sublimetext.3 .md all
-duti -s com.sublimetext.3 .txt all
-duti -s com.sublimetext.3 .py all
+duti -s com.microsoft.VSCode public.plain-text all
+duti -s com.microsoft.VSCode public.unix-executable all
+duti -s com.microsoft.VSCode .mod all
+duti -s com.microsoft.VSCode .dat all
+duti -s com.microsoft.VSCode .run all
+duti -s com.microsoft.VSCode .tex all
+duti -s com.microsoft.VSCode .json all
+duti -s com.microsoft.VSCode .php all
+duti -s com.microsoft.VSCode .md all
+duti -s com.microsoft.VSCode .txt all
+duti -s com.microsoft.VSCode .py all
 
 # oh-my-zsh
 exec zsh

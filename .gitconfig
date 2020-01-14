@@ -1,8 +1,9 @@
 [user]
-	name = Dmitry Baginsky
-	email = dmitri.baginski@gmail.com
+	name = Dzmitry Duleba
+ 	email = dzmitry.duleba@apalon.com
+ 	signingkey = 4A09D6D022CE7D2D
 [github]
-	user = betraying
+	user = ddomovoj
 [core]
 	excludesfile = ~/.gitignore
 [rerere]
@@ -19,18 +20,8 @@
 	showPatch = true
 [push]
 	default = current
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[difftool]
-	prompt = false
-[diff]
-	tool = Kaleidoscope
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool]
 	prompt = false
-[merge]
-	tool = Kaleidoscope
 [tig "color"]
 	cursor = default default reverse
 	id = yellow default
