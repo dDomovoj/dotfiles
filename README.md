@@ -8,7 +8,7 @@ git clone https://github.com/betraying/dotfiles ~/.dotfiles
 
 ## [homebrew](https://github.com/Homebrew/brew)
 ```shell
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
 ## [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
